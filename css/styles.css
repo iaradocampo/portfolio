@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+/* BASE */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #000;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+/* ******** */
+
+/* GENERAL */
+span{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+}
+
+.star-icon{
+    width: .7rem;
+}
+
+h1, h2, .hero-title{
+    font-family: "Spicy Rice", serif;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 992px){
+    h1, h2, .hero-title{
+        font-size: 2rem;
+    }
+}
+
+.padding-10{
+    padding: 10rem 0;
+}
+
+@media (max-width:992px){
+    .padding-10{
+        padding: 5rem 0;
+    }
+}
+/* ******** */
+
+/* NAVBAR */
+.navbar{
+    background-color: #000;
+    padding: 1.5rem;
+}
+
+.navbar .collapse .navbar-nav{
+    background-color: #000;
+}
+
+.navbar .navbar-nav .nav-item{
+    padding: 0 1.3rem;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link{
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -1px;
+}
+
+.button-contact{
+    width: 12.25rem;
+    padding: 1.5rem;
+    background-color: #FFDE9F;
+}
+/* ******** */
+
+/* HERO */
+section .hero{
+    min-height: 100vh;
+}
+
+section .row .bg-color-first{
+    background-color: #EFF483;
+    border-right: 2px solid #000;
+}
+
+@media (max-width:992px){
+    section .row .bg-color-first{
+        padding: 3rem 0;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+}
+
+section .row .bg-color-first .hero-text button{
+    width: 10rem;
+    padding: 1rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    color: #FFF;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+
+section .row .bg-color-first .hero-text button:hover{
+    color: #000;
+    background-color: #ED6B2D;
+}
+
+section .row .bg-color-second{
+    background-color: #A9A9DC;
+}
+
+@media (max-width:992px){
+    section .row .bg-color-second{
+        padding: 5rem 0;
+    }
+}
+
+section .row .bg-color-second img{
+    min-width: 300px;
+    max-width: 650px;
+    transform: rotate(0.01turn);
+}
+
+@media (min-width: 300px) and (max-width: 1390px){
+    section .row .bg-color-second img{
+        transform: rotate(0);
+    }
+}
+/* ******** */
+
+/* SOCIAL MEDIA */
+.social-media .container-fluid .d-flex a svg:hover{
+    fill: #BDF4A3;
+}
+
+.social-media .container-fluid .d-flex .social-media-list p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.social-media .container-fluid .d-flex .social-media-list{
+    list-style-type: none;
+}
+/* ******** */
+
+/* SECTION ABOUT ME */
+main{
+    background-color: #FFF8E6;
+}
+
+main .container .description ul {
+    list-style-type: none;
+}
+
+main .container .description ul li img{
+    width: 100px;
+}
+
+@media (max-width:992px){
+    main .container .description ul li img{
+        width: 80px;
+    }
+}
+/* ******** */
+
+/* SECTION PORTFOLIO */
+.section-portfolio{
+    background-color: #F7E5FD;
+}
+
+.section-portfolio .container .row .col-lg-6 .card{
+    width: 600px;
+    border: 3px solid #000;
+    border-radius: 2rem 2rem 0 0;
+}
+
+@media (max-width:992px){
+    .section-portfolio .container .row .col-lg-6 .card{
+        margin: 0 1rem;
+    }
+}
+
+.section-portfolio .container .row .col-lg-6 .card .card-image{
+    height: 350px;
+}
+
+.section-portfolio .container .row .col-lg-6 .card .card-image .card-img-top{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.section-portfolio .container .row .col-lg-6 .card .card-body{
+    border-top: 3px solid #000;
+}
+/* ******** */
+
+/* SECTION CONTACT ME */
+.section-contact{
+    background-color: #ECF4FF;
+}
+
+.section-contact .container form .row .col-6 label{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+}
+
+.section-contact .container form .row .mb-3 input{
+    font-weight: 500;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 2rem;
+}
+
+.section-contact .container form .row .mb-3 input::placeholder{
+    color: #000;
+    font-weight: 500;
+}
+
+.section-contact .container form .row .mb-3 input:focus{
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+}
+
+.section-contact .container form .mb-3 textarea{
+    border: 3px solid #000;
+    border-radius: 1rem;
+}
+
+.section-contact .container form .mb-3 textarea::placeholder{
+    color: #000;
+}
+
+.section-contact .container form .mb-3 textarea:focus{
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+}
+
+.section-contact .container form button{
+    width: 15rem;
+    padding: 20px;
+    color: #FFF;
+    background-color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    border: 0;
+    border-radius: 2rem;
+}
+/* ******** */
+
+/* FOOTER */
+footer{
+    padding: 5rem 0;
+    background-color: #ED6B2D;
+}
+
+footer .container p{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+
+footer .container .row .form-footer form{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+footer .container .row .form-footer form input{
+    color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 2rem;
+}
+
+footer .container .row .form-footer form input:focus{
+    outline: none;
+}
+
+footer .container .row .form-footer form input::placeholder{
+    color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+
+footer .container .row .form-footer form button{
+    position: absolute;
+    padding: 15px;
+    right: 5px;
+    color: #FFF;
+    background-color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    border: 0;
+    border-radius: 2rem;
+}
+
+footer .container ul{
+    list-style-type: none;
+}
+
+footer .container ul li a{
+    color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
